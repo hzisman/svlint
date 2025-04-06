@@ -88,7 +88,6 @@ release_lnx:
 	cargo build --release --target=x86_64-unknown-linux-musl
 	rm -rf tmp
 	mkdir -p tmp/bin/ tmp/doc/
-	cp ${RELEASE_MANUAL} tmp/doc/
 	cp rulesets/*.toml tmp/bin/
 	cp $$(find rulesets/ -type f -perm -u+x) tmp/bin/
 	cp target/x86_64-unknown-linux-musl/release/${BIN_NAME} tmp/bin/
