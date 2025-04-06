@@ -33,7 +33,7 @@ impl TextRule for StyleDirectives {
                 , "default_nettype"
                 , "line"
                 , "resetall"
-                , "include"
+                // , "include"
                 , "define"
                 , "ifdef"
                 , "ifndef"
